@@ -2,6 +2,36 @@
 .clearfix {
   *zoom: 1;
 }
+
+#OpenSansCondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container-cross {
+    overflow:hidden;
+
+}
+
+#exclusion{
+  position: absolute;
+
+  shape-inside: circle;
+  shape-outside: auto;  
+  shape-image-threshold: <alphavalue>;
+  background:red;
+  border-radius:20%;
+  wrap-flow: both;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -50,6 +80,10 @@ a {
   transition: 300ms;
 }
 
+#navbarlink:hover { 
+  color: #2c3e50;
+}
+
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
@@ -63,11 +97,9 @@ hr {
   color: #fff;
 }
 .btn-transparent:hover {
-  border-color: rgba(255, 255, 255, 0.5);
 }
 a:hover,
 a:focus {
-  color: #d9534f;
   text-decoration: none;
   outline: none;
 }
@@ -213,7 +245,7 @@ body > section {
 .midnight-blue h6,
 .concrete h6,
 .asbestos h6 {
-  color: #fff;
+
 }
 .turquoise small,
 .green-sea small,
@@ -246,10 +278,11 @@ body > section {
   background-color: #f1c40f;
 }
 .orange {
-  background-color: #f39c12;
+  background-color: #E7E2C2;
 }
 .emerald {
   background-color: #8BBDC6;
+  padding: 10px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -294,9 +327,11 @@ background-color: 797979;
 .wet-asphalt a:not(.btn) {
   color: #bdc3c7;
 }
+
 .wet-asphalt a:not(.btn):hover {
-  color: #d9534f;
+  text-transform: none;
 }
+
 .midnight-blue {
   background-color: #fff;
 }
@@ -452,11 +487,45 @@ background-color: 797979;
   background-color: #666666;
 }
 
+.container-leaders {
+  width:70%;
+}
+
+.container-directory {
+  width:70%;
+}
+
+.container-ministry{
+  width:60%;
+  color:black;
+}
+
+#color-black{
+  color:black;
+}
+
 .container-sitemap {
   font-size:12px;
   text-align:center;
   padding-left:70px;
 }
+
+.service-info{
+  background-color:#8BBDC6;
+}
+
+.service-info2{
+  background-color:#8BBDC6;
+}
+
+.service-info3{
+  background-color:#8BBDC6;
+}
+
+.service-info4{
+  background-color:#8BBDC6;
+}
+
 
 #gray{
   color:#D0D0D0;
@@ -749,12 +818,13 @@ ul.tag-cloud li {
 }
 .navbar-inverse {
   border: none;
+
 }
 .navbar-inverse .navbar-brand {
-  font-family: 'Bubbler One', sans-serif;
+  font-family: 'BannerLogoFont', sans-serif;
   font-size: 30px;
   line-height: 50px;
-  color: #fff;
+  font-
 }
 .navbar-inverse .navbar-nav {
   position:relative;
@@ -1080,7 +1150,7 @@ ul.pagination > li > a {
   border: 0;
 }
 ul.pagination > li.active > a,
-ul.pagination > li:hover > a {
+ul.pagination {
   background-color: #34495e;
   color: #fff;
 }
@@ -1149,6 +1219,29 @@ ul.faq li > div h3 {
   left: 10%;
   top: 60%;
   margin-left: -300px; /*half the width*/
+}
+
+.serve_index{
+}
+
+
+.navLogo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #7E7E7E;
+}
+
+.bannerLogo{
+    font-family: ;
+    font-weight: bold;
+    color: #;
+}
+
+
+
+@font-face {
+    font-family: lanenar;
+    src: url("../fonts/lanenar.ttf") format("opentype");
 }
 
 

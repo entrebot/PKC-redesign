@@ -20,6 +20,26 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
 
 <div class="navbar-box">
     <header class="navbar navbar-inverse wet-asphalt" role="banner">
@@ -31,17 +51,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50px" alt="logo">Palomar Korean Church</a>
+                <a id="navbarlink" class="navbar-brand" href="index.html"><img src="images/logo.png" width="70px" alt="logo" style="padding-right:10px"><span class= "navLogo">Palomar Korean Church </span></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                   <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
+                   <li><a id="navbarlink" href="index.html">Home</a></li>
+                    <li><a id="navbarlink" href="aboutus.html">About Us</a></li>
                     <li class="active"><a href="ministries.html">Ministries</a></li>
-                    <li><a href="serve.html">Serve</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="give.html">Give</a></li> 
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a id="navbarlink" href="serve.html">Serve</a></li>
+                    <li><a id="navbarlink" href="media.html">Media</a></li>
+                    <li><a id="navbarlink" href="give.html">Give</a></li> 
+                    <li><a id="navbarlink" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -53,58 +73,57 @@
                 <div class="col-sm-6">
                     <a name="top"><h1>Ministries</h1></a>
                 </div>
-                <div class="col-sm-6">
+<!--                 <div class="col-sm-6">
                     <ul class="breadcrumb pull-right">
                         <li><a href="index.html">Home</a></li>
                         <li><a class="active">Ministries</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </section><!--/#title-->     
 
-    <section id="services">
-        <div class="container center">
+    <section class="wet-asphalt">
+        <div class="container container-ministry center">
 
 
-            <p>Choose a ministry</p>
+
             <div class="row">
                 <div class="col-sm-3">
                     <div class="media">
-                        <a href="#roots">
+                        <a id="color-black" href="#roots">
                             <div>
-
                                 <img src="images/ministries/rootslogo.jpg" width="100px" height="100px"/>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">ROOTS</h3>
-                                <h6>Children</h6>
+                                <h3 class="media-heading">CHILDREN</h3>
+                                <h6>Roots</h6>
                             </div>
                         </a>
                     </div>
                 </div><!--/.col-md-4-->
                 <div class="col-sm-3">
                     <div class="media">
-                        <a href="#encounter">
+                        <a href="#encounter" id="color-black">
                             <div>
                                 <img src="images/ministries/encounterlogo.jpg" width="100px"/>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">ENCOUNTER</h3>
-                                <h6>Youth &amp; College Students</h6>
+                                <h3 class="media-heading">YOUTH &amp; COLLEGE STUDENTS</h3>
+                                <h6>Encounter</h6>
                             </div>
                         </a>
                     </div>
                 </div><!--/.col-md-4-->
                 <div class="col-sm-3">
                     <div class="media">
-                        <a href="#overflow">
+                        <a href="#overflow" id="color-black">
                             <div>
                                 <img src="images/ministries/overflowlogo.jpg" width="100px" height="100px"/>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">OVERFLOW</h3>
-                                <h6>Postgraduate Students</h6>
+                                <h3 class="media-heading">POSTGRADUATE STUDENTS</h3>
+                                <h6>Overflow</h6>
                                 
                             </div>
                         </a>
@@ -112,7 +131,7 @@
                 </div><!--/.col-md-4-->
                 <div class="col-sm-3">
                     <div class="media">
-                        <a href="#adult">
+                        <a href="#adult" id="color-black">
                             <div>
                                 <img src="images/ministries/adultlogo.jpg" width="100px" height="100px"/>
                             </div>
@@ -126,29 +145,11 @@
                 </div><!--/.col-md-4-->
             </div>
         </div>
-    </section><!--/#services-->
+    </section><!--ministry-->
 
 <section id="blog" class="container">
             <div class="row center">
-                <!-- <div class="col-sm-2">
-                    <ul class="sidebar-nav divfix"> 
-                        <li class="sidebar-brand">
-                                Ministries
-                        </li>
-                        <li>
-                            <a href="#roots">Roots</a>
-                        </li>
-                        <li>
-                            <a href="#encounter">Encounter</a>
-                        </li>
-                        <li>
-                            <a href="#overflow">Overflow</a>
-                        </li>
-                        <li>
-                            <a href="#adult">Adult</a>
-                        </li>
-                    </ul>
-                </div>  -->       
+      
             <div class="col-sm-2"></div>
             <div class="col-sm-8 center">
                 <div class="blog">
@@ -157,14 +158,14 @@
                         <div class="blog-content">
                             <div class="row center">
                                 <div class="col">
-                                    <a href="blog-item.html"><h3>ROOTS</h3></a>
+                                    <a href="blog-item.html" id="color-black"><h3>ROOTS</h3></a>
                                 </div>
                             </div>
                             <h5 class="ministries-quote">"There shall come forth a shoot from the stump of Jesse, <br>and a branch from his roots shall bear fruit."<br> Isaiah 11:1</h5>
-                            <img class="center-block" src="images/ministries/rootsdisplay.jpg" width="700px" alt=""/>
-                            <br><p class="ministries_description"> This paragraph will give the reader a glimpse into what activities and curriculum the Children's Ministry engage in, such as Vacation Bible Study (VBS). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            <img class="center-block" src="images/ministries/rootsdisplay.jpg" width="100%" alt=""/>
+                            <br><p class="ministries_description"> Palomar Korean Church's Children's Ministry, also known as Roots Ministry, caters to our beautiful children in our church. This ministry is a healthy, safe environment for kids to come and learn more about God's unconditional love and grace. There are annual festivals and summer Vacation Bible Study to engage the kids in learning more about our beloved Father.
                             </p>
-                            <a class="btn btn-default" href="#top">Back to top<i class="icon-angle-up"></i></a>
+                            <a class="btn btn-default" href="#top">Back to top</a>
                         </div>
                     </div>
                     <!--/.blog-item-->
@@ -173,13 +174,13 @@
                         <div class="blog-content">
                             <div class="row center">
                                 <div class="col">
-                                    <a href="blog-item.html"><h3>ENCOUNTER</h3></a>
+                                    <a href="blog-item.html" id="color-black"><h3>ENCOUNTER</h3></a>
                                 </div>
                             </div>
                             <h5 class="ministries-quote">"For I am not ashamed of the gospel, for it is the power of God<br> for salvation to everyone who believes,<br> to the Jew first and also to the Greek."<br>Roman 1:16</h5>
-                            <img class="center-block" src="images/ministries/encounterdisplay.jpg" width="700px" alt=""/>
+                            <img class="center-block" src="images/ministries/encounterdisplay.jpg" width="100%" alt=""/>
                             <p>Palomar Korean Church's English Ministry (EM), also called Encounter Ministry exists to know Jesus and make Him known! John 17:3 says "And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent." And we have been called to proclaim his good news through the Great Commission (Matthew 28:18-20)! "And all this is from God, who through Christ reconciled us to himself and gave us the ministry of reconciliation. (2 Corinthians 5:18)" This is the journey we travel together as pilgrims until the return of our Lord and Savior Jesus Christ!</p>
-                            <a class="btn btn-default" href="#top">Back to top<i class="icon-angle-up"></i></a>
+                            <a class="btn btn-default" href="#top">Back to top</a>
                         </div>
                     </div><!--/.blog-item-->
                     <a name="overflow"></a>
@@ -187,13 +188,13 @@
                         <div class="blog-content">
                             <div class="row center">
                                 <div class="col">
-                                    <a href="blog-item.html"><h3>OVERFLOW</h3></a>
+                                    <a href="blog-item.html" id="color-black"><h3>OVERFLOW</h3></a>
                                 </div>
                             </div>
                             <h5 class="ministries-quote">"'For I know the plans that I have for you,' declares the LORD, <br> 'plans for welfare and not for calamity to give you <br>a future and a hope."<br> Jeremiah 29:11</h5>
-                            <img class="center-block" src="images/ministries/overflowdisplay.jpg" width="700px" alt=""/>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                            <a class="btn btn-default" href="#top">Back to top<i class="icon-angle-up"></i></a>
+                            <img class="center-block" src="images/ministries/overflowdisplay.jpg" width="100%" alt=""/>
+                            <p>Overflow Ministry is PKC's brand new ministry created about five months ago. This was recently made by Pastor Cho who felt the need to help postgraduate students in their spirtual walk after college. He knows how hard and difficult it is for alumnis to find the same accountability that they are used to from college. His vision is to have this ministry grow more over the next year. </p>
+                            <a class="btn btn-default" href="#top">Back to top</a>
                         </div>
                     </div><!--/.blog-item-->
                     <a name="adult"></a>
@@ -201,13 +202,13 @@
                         <div class="blog-content">
                             <div class="row center">
                                 <div class="col">
-                                    <a href="blog-item.html"><h3>ADULT</h3></a>
+                                    <a href="blog-item.html" id="color-black"><h3>ADULT</h3></a>
                                 </div>
                             </div>
                             <h5 class="ministries-quote">"For You are my hope; O Lord GOD,<br> You are my confidence from my youth." <br>Psalm 71:5 </h5>
-                            <img class="center-block" src="images/ministries/adultdisplay.jpg" width="700px" alt=""/>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                            <a class="btn btn-default" href="#top">Back to top<i class="icon-angle-up"></i></a>
+                            <img class="center-block" src="images/ministries/adultdisplay.jpg" width="100%" alt=""/>
+                            <p>Palomar Korean Church's Adult ministry exists for the Korean parents and elders to come together in service and worship. This ministry is merely first generation Korean adults who listen to their sermons and sing praises in the Korean language. This is the traditional family-oriented ministry who loves bonding through potlucks and weekly open house bible studies.</p>
+                            <a class="btn btn-default" href="#top">Back to top</a>
                         </div>
                     </div><!--/.blog-item-->
                 </div>
@@ -222,7 +223,7 @@
             <div class="col-md-8 container container-sitemap">
                 <div class="row">
                 <div class="col-md-2">
-                    <h5 style="color:white"><a ref="aboutus.html">ABOUT US</a></h5>
+                    <a href="aboutus.html"><h5 style="color:white">ABOUT US</h5></a>
                          <ul class="unstyled">
                             <li><a href="/aboutus.html"><span id="gray">Our Doctrine</span></a></li>
                             <li><a href="/aboutus.html"><span id="gray">We Believe</span></a></li>
@@ -230,7 +231,7 @@
                         </ul>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">MINISTRIES</h5>
+                    <a href="ministries.html"><h5 style="color:white">MINISTRIES</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="ministries.html"><span id="gray">Children</span></a></li>
@@ -241,7 +242,7 @@
                     </div>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">SERVE</h5>
+                    <a href="serve.html"><h5 style="color:white">SERVE</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="serve.html"><span id="gray">Missions</span></a></li>
@@ -251,7 +252,7 @@
                     </div>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">CONTACT</h5>
+                    <a href="contact.html"><h5 style="color:white">CONTACT</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="contact.html"><span id="gray">Contact Directory</span></a></li>
@@ -284,18 +285,11 @@
 
 
 <!-- end footer  -->
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
     <script src="jquery.min.js"></script>
     <script src="jssor.slider.mini.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var options = { $AutoPlay: true };
-            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-        });
-    </script>
 </body>
 </html>
