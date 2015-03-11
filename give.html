@@ -14,7 +14,20 @@
         <link href="css/main.css" rel="stylesheet">
 
         <script src="js/modernizr.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script ="text/javascript">(function($){
+  if(document.location.href.indexOf('give.html') !== -1){
+  $(document).on('change', 'input[type="radio"]', function(){
+  var amount = $(this).next('label').data('amount');
+  $('#donation-amount').val(amount);
+  })
 
+  $(document).on('keyup', '#other-amount', function(e){
+  var amount = $(this).val();
+  $('#donation-amount').val(amount);
+  })
+  }
+}(jQuery)) </script>
         <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
                 <!-- never cache patterns -->
         <meta http-equiv="cache-control" content="max-age=0" />
@@ -77,9 +90,16 @@
     
 <section class="section">
     <div class="lc lc-single">
+        <div class="col-sm-6" style="z-index: 10;position: absolute;left: -60%;top: 1px;">
+            <img src="images/u114.png" alt="giving-image" title="give now!" class="img-rounded" />
+            
+            <h3>Giving from you heart</h3>
+            
+            <p>Tithing Is More Than Giving. The word "tithe" literally means tenth or 10%. Tithing, or giving ten percent of your income, isn't merely giving something to God. It's giving back what was his to begin with. All that we have, or hope to have, comes from him. The Bible says that tithing is a reminder that God is the supplier of everything. It teaches us to always put God first in our lives.</p>
+        </div>
         <div class="donate donate-page">
         
-        <form method="post" action="https://secure2.convio.net/gpcfb/site/CRDonationAPI" class="donate-form luminateApi donation-form" id="donate-form">
+        <form method="post" action="thank-you.html" class="donate-form luminateApi donation-form" id="donate-form">
         <input type="hidden" name="method" value="donate" />
         <input type="hidden" name="form_id" value="4080" />
         <input type="hidden" name="validate" value="true" />
@@ -136,7 +156,7 @@
             <div class="g g-2up">
                 <div class="field-container gi">
                     <label for="donate-name">Full Name</label>
-                    <input type="text" id="donate-name" placeholder="Firstname Lastname" autocomplete="off" required pattern="\ " data-parsley-pattern="\ " data-parsley-error-message="Please enter your first and last name" />
+                    <input type="text" id="donate-name" placeholder="Firstname Lastname" autocomplete="off" required data-parsley-pattern="\ " data-parsley-error-message="Please enter your first and last name" />
                 </div>
                 <div class="field-container gi">
                     <label for="donate-email">E-mail</label>
@@ -168,37 +188,21 @@
         <fieldset class="donate-step" name="donate-step-3" id="donate-step-3" style="display:none;">
             <h4 class="donate-step-legend"><span class="form-step">3</span> Enter your billing info:</h4>
             
-            <div class="radio-container" id="payment-type-radio">
-                <label><input type="radio" name="payment_type" checked="checked" data-payment-type="payment-type-cc" /> Credit Card</label>
-                <label><input type="radio" name="payment_type"  data-payment-type="payment-type-bank" /> Bank Account</label>
-            </div>
-            
             <div class="payment-type active" id="payment-type-cc">
                 <h4>Credit Card Info</h4>
                 <div class="credit-card-group">
                     <label for="card-number">Credit Card Number</label>
-                    <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number" name="card_number">
+                    <input placeholder="1234 5678 9012 3456" pattern="[0-9 ]*" type="text" class="card-number" id="card-number" name="card_number">
                     <label for="card-expiration">Credit Card Expiration</label>
-                    <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration" name="card_exp">
+                    <input placeholder="MM/YY" pattern="[0-9/]*" type="text" class="card-expiration" id="card-expiration" name="card_exp">
                     <label for="card-cvv">Credit Card Expiration</label>
                     <input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv" name="card_cvv">
-                    <label for="card-expiration">Credit Card Billing ZIP Code</label>
-                    <input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip">
+            
+            
                 </div><!--end .credit-card-group-->
             </div><!--end .payment-type-bank-->
             
-            <div class="payment-type" id="payment-type-bank">
-                <div class="g g-2up">
-                    <div class="field-container gi">
-                        <label for="bank-routing">Routing Number</label>
-                        <input type="text" id="bank-routing" placeholder="036001808" pattern="[0-9]*" autocomplete="off" name="billing.address.state" />
-                    </div>
-                    <div class="field-container gi">
-                        <label for="bank-account">Bank Account Number</label>
-                        <input type="text" id="bank-account" placeholder="0175380001" pattern="[0-9]*" name="billing.address.zip" />
-                    </div>
-                </div><!--end .g-2up-->
-            </div><!--end .payment-container-bank-->
+            
         <button class="donate-submit btn">
             <a href="donate.html">
             <span class="donate-submit-text">Donate</span>
@@ -220,7 +224,7 @@
             <div class="col-md-8 container container-sitemap">
                 <div class="row">
                 <div class="col-md-2">
-                    <h5 style="color:white"><a ref="aboutus.html">ABOUT US</a></h5>
+                    <a href="aboutus.html"><h5 style="color:white">ABOUT US</h5></a>
                          <ul class="unstyled">
                             <li><a href="/aboutus.html"><span id="gray">Our Doctrine</span></a></li>
                             <li><a href="/aboutus.html"><span id="gray">We Believe</span></a></li>
@@ -228,7 +232,7 @@
                         </ul>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">MINISTRIES</h5>
+                    <a href="ministries.html"><h5 style="color:white">MINISTRIES</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="ministries.html"><span id="gray">Children</span></a></li>
@@ -239,7 +243,7 @@
                     </div>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">SERVE</h5>
+                    <a href="serve.html"><h5 style="color:white">SERVE</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="serve.html"><span id="gray">Missions</span></a></li>
@@ -249,7 +253,7 @@
                     </div>
                 </div><!--/.col-md-3-->
                 <div class="col-md-2">
-                    <h5 style="color:white">CONTACT</h5>
+                    <a href="contact.html"><h5 style="color:white">CONTACT</h5></a>
                     <div>
                         <ul class="unstyled">
                             <li><a href="contact.html"><span id="gray">Contact Directory</span></a></li>
