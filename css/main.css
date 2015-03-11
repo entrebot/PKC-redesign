@@ -1237,6 +1237,30 @@ ul.faq li > div h3 {
     color: #;
 }
 
+.sliderLogo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+
+.slider2Logo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 80px;
+}
+
+
+.slider3Logo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 40px;
+}
+
+
 
 
 @font-face {
