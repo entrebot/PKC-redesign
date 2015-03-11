@@ -3,8 +3,12 @@
   *zoom: 1;
 }
 
-#OpenSansCondensed {
-  font-family: 'Open Sans Condensed', sans-serif;
+.OpenSansCondensed {
+  font-family: 'OpenSansCondensed', sans-serif;
+}
+
+.OpenSans {
+  font-family: 'OpenSans', sans-serif;
 }
 
 .clearfix:before,
@@ -462,9 +466,24 @@ background-color: 797979;
   background-color: #666666;
 }
 
-#index-menu:hover{
-  -webkit-filter: blur(1px);
+
+#index-menu {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: relative;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('blackgradient.png');
 }
+
+#index-menu:hover{
+  color:white;
+}
+
 
 
 .container-leaders {
@@ -982,9 +1001,22 @@ ul.tag-cloud li {
   margin-top: 0;
   margin-bottom: 15px;
 }
-#bottom .media-heading {
-  display: block;
-  font-weight: 400;
+
+.index-heading{
+  color: white;
+  display:block;
+  font-size:40pt;
+  font-family: OpenSans;
+  font-weight:60;
+  height:500px;
+  left:22%;
+  margin-top:-50px;
+  position:absolute;
+  text-align:center;
+  top:55%;
+  width:50%;
+  z-index:99999;
+  text-shadow: 2px 1px #34495e;
 }
 .row > div {
   margin-bottom: 10px;
