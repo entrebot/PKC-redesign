@@ -280,6 +280,7 @@ body > section {
 }
 .emerald {
   background-color: #8BBDC6;
+  padding: 10px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -1218,3 +1219,16 @@ ul.faq li > div h3 {
 }
 
 
+.BannerLogo{
+    font-family: BannerLogoFont;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+
+
+@font-face {
+    font-family: BannerLogoFont;
+    src: url("../fonts/lanenar.ttf") format("opentype");
+}
