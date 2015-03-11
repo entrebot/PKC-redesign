@@ -1221,12 +1221,14 @@ ul.faq li > div h3 {
   margin-left: -300px; /*half the width*/
 }
 
-<<<<<<< 
+.serve_index{
+}
+
 
 .BannerLogo{
     font-family: BannerLogoFont;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #89796b;
 }
 
 
