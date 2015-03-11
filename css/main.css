@@ -1240,16 +1240,16 @@ ul.faq li > div h3 {
 }
 
 .bannerLogo{
-    font-family: ;
+    font-family: lanenar;
     font-weight: bold;
-    color: #;
+    color: #FFFFFF;
 }
 
 .sliderLogo{
     font-family: lanenar;
     font-weight: bold;
     color: #FFFFFF;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 
@@ -1257,7 +1257,6 @@ ul.faq li > div h3 {
     font-family: lanenar;
     font-weight: bold;
     color: #FFFFFF;
-    padding: 80px;
 }
 
 
@@ -1265,7 +1264,12 @@ ul.faq li > div h3 {
     font-family: lanenar;
     font-weight: bold;
     color: #FFFFFF;
-    padding: 40px;
+}
+
+.iconLogo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #000000;
 }
 
 
