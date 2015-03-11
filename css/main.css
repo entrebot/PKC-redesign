@@ -1225,16 +1225,23 @@ ul.faq li > div h3 {
 }
 
 
-.BannerLogo{
-    font-family: BannerLogoFont;
+.navLogo{
+    font-family: lanenar;
     font-weight: bold;
-    color: #89796b;
+    color: #7E7E7E;
 }
 
+.bannerLogo{
+    font-family: ;
+    font-weight: bold;
+    color: #;
+}
 
 
 
 @font-face {
-    font-family: BannerLogoFont;
+    font-family: lanenar;
     src: url("../fonts/lanenar.ttf") format("opentype");
 }
+
+
