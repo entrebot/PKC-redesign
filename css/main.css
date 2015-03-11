@@ -7,31 +7,6 @@
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.container-cross {
-    overflow:hidden;
-
-}
-
-#exclusion{
-  position: absolute;
-
-  shape-inside: circle;
-  shape-outside: auto;  
-  shape-image-threshold: <alphavalue>;
-  background:red;
-  border-radius:20%;
-  wrap-flow: both;
-}
-
-.circle{
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-}
-
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -108,7 +83,7 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 50px 0;
+  padding: 10px;
 }
 .turquoise,
 .green-sea,
@@ -282,7 +257,7 @@ body > section {
 }
 .emerald {
   background-color: #8BBDC6;
-  padding: 10px;
+  padding: 0px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -486,6 +461,11 @@ background-color: 797979;
 #bottom .blackstone{
   background-color: #666666;
 }
+
+#index-menu:hover{
+  -webkit-filter: blur(1px);
+}
+
 
 .container-leaders {
   width:70%;
@@ -1220,10 +1200,6 @@ ul.faq li > div h3 {
   top: 60%;
   margin-left: -300px; /*half the width*/
 }
-
-.serve_index{
-}
-
 
 .navLogo{
     font-family: lanenar;
