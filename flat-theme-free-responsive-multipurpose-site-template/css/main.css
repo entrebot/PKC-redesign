@@ -2,11 +2,6 @@
 .clearfix {
   *zoom: 1;
 }
-
-#OpenSansCondensed {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -48,17 +43,12 @@ h6 {
   font-weight: 400;
 }
 a {
-  color: white;
+  color: #34495e;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
 }
-
-#navbarlink:hover { 
-  color: #2c3e50;
-}
-
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
@@ -72,9 +62,11 @@ hr {
   color: #fff;
 }
 .btn-transparent:hover {
+  border-color: rgba(255, 255, 255, 0.5);
 }
 a:hover,
 a:focus {
+  color: #d9534f;
   text-decoration: none;
   outline: none;
 }
@@ -83,7 +75,7 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 10px;
+  padding: 50px 0;
 }
 .turquoise,
 .green-sea,
@@ -220,7 +212,7 @@ body > section {
 .midnight-blue h6,
 .concrete h6,
 .asbestos h6 {
-
+  color: #fff;
 }
 .turquoise small,
 .green-sea small,
@@ -253,11 +245,10 @@ body > section {
   background-color: #f1c40f;
 }
 .orange {
-  background-color: #E7E2C2;
+  background-color: #f39c12;
 }
 .emerald {
-  background-color: #8BBDC6;
-  padding: 0px;
+  background-color: #2ecc71;
 }
 .nephritis {
   background-color: #27ae60;
@@ -270,10 +261,6 @@ body > section {
 }
 .peter-river {
   background-color: #3498db;
-}
-.blackstone {
-background-color: 797979;
-}
 }
 .belize-hole {
   background-color: #2980b9;
@@ -297,16 +284,14 @@ background-color: 797979;
   background-color: #bdc3c7;
 }
 .wet-asphalt {
-  background-color: #fff;
+  background-color: #34495e;
 }
 .wet-asphalt a:not(.btn) {
   color: #bdc3c7;
 }
-
 .wet-asphalt a:not(.btn):hover {
-  text-transform: none;
+  color: #d9534f;
 }
-
 .midnight-blue {
   background-color: #fff;
 }
@@ -450,96 +435,24 @@ background-color: 797979;
   position: relative;
   margin: 0;
 }
-
-#black-background {
-  background-color: #666666;
-  padding-top:10px;
-  padding-bottom:0px;
-}
-
-
-#bottom .blackstone{
-  background-color: #666666;
-}
-
-#index-menu:hover{
-  -webkit-filter: blur(1px);
-}
-
-
-.container-leaders {
-  width:70%;
-}
-
-.container-directory {
-  width:70%;
-}
-
-.container-ministry{
-  width:60%;
-  color:black;
-}
-
-#color-black{
-  color:black;
-}
-
-.container-sitemap {
-  font-size:12px;
-  text-align:center;
-  padding-left:70px;
-}
-
-.service-info{
-  background-color:#8BBDC6;
-}
-
-.service-info2{
-  background-color:#8BBDC6;
-}
-
-.service-info3{
-  background-color:#8BBDC6;
-}
-
-.service-info4{
-  background-color:#8BBDC6;
-}
-
-
-#gray{
-  color:#D0D0D0;
-}
-
-.container-address {
-  width:30%;
-  font-size: 10pt;
-  color:#D0D0D0;
-  text-align:center;
-}
-
-.container-bottom {
-  background-color: #797979;
-}
-
 .portfolio-items,
 .portfolio-filter {
   list-style: none;
-  padding-left:10%;
+  padding: 0;
   margin: 0 -20px 20px 0;
 }
 .portfolio-filter > li {
   display: inline-block;
 }
 .portfolio-items > li {
-  float: center;
+  float: left;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .portfolio-items.col-2 > li {
-  width: 40%;
+  width: 50%;
 }
 .portfolio-items.col-3 > li {
   width: 33%;
@@ -798,25 +711,16 @@ ul.tag-cloud li {
 }
 .navbar-inverse {
   border: none;
-
 }
 .navbar-inverse .navbar-brand {
-  font-family: 'BannerLogoFont', sans-serif;
-  font-size: 30px;
+  font-family: 'Bubbler One', sans-serif;
+  font-size: 36px;
   line-height: 50px;
-  font-
+  color: #fff;
 }
 .navbar-inverse .navbar-nav {
-  position:relative;
   margin-top: 20px;
 }
-
-.navbar-box{
-  margin-top:-80px;
-  margin-bottom:-20px;
-}
-
-
 .navbar-inverse .navbar-nav > li > a {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -976,7 +880,7 @@ ul.tag-cloud li {
   display: inline-block;
 }
 #bottom {
-  color: blue;
+  color: #bdc3c7;
 }
 #bottom h4 {
   margin-top: 0;
@@ -991,8 +895,8 @@ ul.tag-cloud li {
 }
 ul.unstyled {
   list-style: none;
-  line-height:20px;
-  margin-left: -40px;
+  padding: 0;
+  margin: 0;
 }
 /*Unordered Lists*/
 ul.arrow,
@@ -1049,7 +953,7 @@ ul.rss li::before {
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: white;
+  color: #bdc3c7;
 }
 #footer a {
   color: #bdc3c7;
@@ -1061,12 +965,10 @@ ul.rss li::before {
   list-style: none;
   padding: 0;
   margin: 0;
-  color:white;
 }
 #footer ul > li {
   display: inline-block;
   margin-left: 15px;
-  color:white;
 }
 ul.social {
   list-style: none;
@@ -1130,7 +1032,7 @@ ul.pagination > li > a {
   border: 0;
 }
 ul.pagination > li.active > a,
-ul.pagination {
+ul.pagination > li:hover > a {
   background-color: #34495e;
   color: #fff;
 }
@@ -1185,63 +1087,3 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
-
-
-.ministries-quote {
-  margin-left:100px;
-  margin-right:100px;
-}
-
-.divfix{
-  position: fixed;
-  width: 600px;
-  height: 200px;
-  left: 10%;
-  top: 60%;
-  margin-left: -300px; /*half the width*/
-}
-
-.navLogo{
-    font-family: lanenar;
-    font-weight: bold;
-    color: #7E7E7E;
-}
-
-.bannerLogo{
-    font-family: ;
-    font-weight: bold;
-    color: #;
-}
-
-.sliderLogo{
-    font-family: lanenar;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding-left: 50px;
-}
-
-
-.slider2Logo{
-    font-family: lanenar;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding: 80px;
-}
-
-
-.slider3Logo{
-    font-family: lanenar;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding: 40px;
-}
-
-
-
-
-@font-face {
-    font-family: lanenar;
-    src: url("../fonts/lanenar.ttf") format("opentype");
-}
-
-
