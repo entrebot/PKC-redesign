@@ -3,6 +3,20 @@
   *zoom: 1;
 }
 
+@font-face {
+  font-family: TheSans;
+  src: url(../fonts/TheSans_ExtraBold_caps.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(http://fonts.googleapis.com/css?family=Lato:400,700);
+}
+
+.TheSans{
+  font-family: 'TheSans';
+}
+
 .OpenSansCondensed {
   font-family: 'OpenSansCondensed', sans-serif;
 }
@@ -481,7 +495,8 @@ background-color: 797979;
 }
 
 #index-menu:hover{
-  color:white;
+  opacity:0.3;
+    -webkit-transition: opacity 300ms;
 }
 
 
@@ -1003,20 +1018,20 @@ ul.tag-cloud li {
 }
 
 .index-heading{
-  color: white;
+  color: #EBEBEB;
   display:block;
   font-size:40pt;
-  font-family: OpenSans;
-  font-weight:60;
+  font-weight:900;
+  font-family: Lato;
   height:500px;
-  left:22%;
-  margin-top:-50px;
+  left:35%;
+  margin-top:-190px;
   position:absolute;
-  text-align:center;
-  top:55%;
+  text-align:left;
+  top:90%;
   width:50%;
   z-index:99999;
-  text-shadow: 2px 1px #34495e;
+  text-shadow: 2px 2px black;
 }
 .row > div {
   margin-bottom: 10px;
