@@ -495,7 +495,7 @@ background-color: 797979;
 }
 
 #index-menu:hover{
-  opacity:0.3;
+    opacity:0.3;
     -webkit-transition: opacity 300ms;
 }
 
@@ -1017,19 +1017,25 @@ ul.tag-cloud li {
   margin-bottom: 15px;
 }
 
-.index-heading{
-  color: #EBEBEB;
-  display:block;
-  font-size:40pt;
-  font-weight:900;
-  font-family: Lato;
-  height:500px;
-  left:35%;
-  margin-top:-190px;
-  position:absolute;
-  text-align:left;
-  top:90%;
+.index-button{
+  height:25%;
   width:50%;
+  background: rgba(105, 105, 105, 0.6);
+  border:3px solid #D2D2D2;
+  border-radius:20px;
+  z-index:1;
+  position:absolute;
+  display:block;
+  left:25%;
+  margin-top:-180px;
+}
+
+.index-heading{
+  color: white;
+  display:block;
+  font-size:30pt;
+  font-family: Lato;
+  position:absolute;
   z-index:99999;
   text-shadow: 2px 2px black;
 }
