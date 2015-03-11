@@ -80,6 +80,10 @@ a {
   transition: 300ms;
 }
 
+#navbarlink:hover { 
+  color: #2c3e50;
+}
+
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
@@ -93,11 +97,9 @@ hr {
   color: #fff;
 }
 .btn-transparent:hover {
-  border-color: rgba(255, 255, 255, 0.5);
 }
 a:hover,
 a:focus {
-  color: #d9534f;
   text-decoration: none;
   outline: none;
 }
@@ -326,6 +328,7 @@ background-color: 797979;
 }
 
 .wet-asphalt a:not(.btn):hover {
+  text-transform: none;
 }
 
 .midnight-blue {
@@ -820,7 +823,6 @@ ul.tag-cloud li {
   font-family: 'Bubbler One', sans-serif;
   font-size: 30px;
   line-height: 50px;
-  color: #fff;
 }
 .navbar-inverse .navbar-nav {
   position:relative;
@@ -1146,7 +1148,7 @@ ul.pagination > li > a {
   border: 0;
 }
 ul.pagination > li.active > a,
-ul.pagination > li:hover > a {
+ul.pagination {
   background-color: #34495e;
   color: #fff;
 }
@@ -1217,4 +1219,5 @@ ul.faq li > div h3 {
   margin-left: -300px; /*half the width*/
 }
 
-
+.serve_index{
+}
