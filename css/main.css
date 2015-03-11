@@ -108,7 +108,7 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .turquoise,
 .green-sea,
@@ -496,8 +496,13 @@ background-color: 797979;
 }
 
 .container-ministry{
-  width:60%;
+  width:70%;
   color:black;
+}
+
+#ministry-menu:hover{
+  opacity:0.5;
+  -webkit-transition:opacity 300ms;
 }
 
 #color-black{
