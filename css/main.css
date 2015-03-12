@@ -1033,24 +1033,16 @@ ul.tag-cloud li {
   display:block;
   left:25%;
   margin-top:-180px;
-}
+} 
 
 .index-heading{
   color: white;
   display:block;
-<<<<<<< HEAD
-  font-size:36pt;
-  font-weight:900;
-  font-family: Lato;
-  height:60px;
-  left:38%;
-  margin-top:-190px;
-=======
-  font-size:28pt;
-  font-family: Lato;
->>>>>>> 363e7880e393c5982d2d55520da0db746cf1efb0
   position:absolute;
   z-index:99999;
+  height:60px;
+  font-size:26pt;
+  font-family: Lato;
   text-shadow: 1px 1px black;
 }
 .row > div {
