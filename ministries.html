@@ -41,7 +41,7 @@
     });
     </script>
 
-<div class="navbar-box">
+<div class="navbar-box" name="top">
     <header class="navbar navbar-inverse wet-asphalt" role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <a name="top"><h1>Ministries</h1></a>
+                    <h2 class="bannerLogo">Ministries</h2>
                 </div>
 <!--                 <div class="col-sm-6">
                     <ul class="breadcrumb pull-right">
@@ -86,58 +86,57 @@
     <section class="wet-asphalt">
         <div class="container container-ministry center">
 
-
-
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="media">
+                    <div id="ministry-menu" class="media">
                         <a id="color-black" href="#roots">
                             <div>
-                                <img src="images/ministries/rootslogo.jpg" width="100px" height="100px"/>
+                                 <p><img class="img-responsive img-circle" src="images/ministries/children.jpg" alt="" ></p>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">CHILDREN</h3>
-                                <h6>Roots</h6>
+                                <h3 class="iconLogo">CHILDREN</h3>
+                                <h4 class="iconLogo">Roots</h4>
                             </div>
                         </a>
                     </div>
                 </div><!--/.col-md-4-->
+
                 <div class="col-sm-3">
-                    <div class="media">
+                    <div id="ministry-menu" class="media">
                         <a href="#encounter" id="color-black">
                             <div>
-                                <img src="images/ministries/encounterlogo.jpg" width="100px"/>
+                                <p><img class="img-responsive img-circle" src="images/ministries/youthcollege.jpg" alt="" ></p>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">YOUTH &amp; COLLEGE STUDENTS</h3>
-                                <h6>Encounter</h6>
+                                <h3 class="iconLogo">YOUTH &amp; COLLEGE </h3>
+                                <h4 class="iconLogo">Encounter</h4>
                             </div>
                         </a>
                     </div>
                 </div><!--/.col-md-4-->
                 <div class="col-sm-3">
-                    <div class="media">
+                    <div id="ministry-menu" class="media">
                         <a href="#overflow" id="color-black">
                             <div>
-                                <img src="images/ministries/overflowlogo.jpg" width="100px" height="100px"/>
+                                <p><img class="img-responsive img-circle" src="images/ministries/post.jpg" alt="" ></p>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">POSTGRADUATE STUDENTS</h3>
-                                <h6>Overflow</h6>
+                                <h3 class="iconLogo">POST-<br>GRADUATE</h3>
+                                <h4 class="iconLogo">Overflow</h4>
                                 
                             </div>
                         </a>
                     </div>
                 </div><!--/.col-md-4-->
                 <div class="col-sm-3">
-                    <div class="media">
+                    <div id="ministry-menu" class="media">
                         <a href="#adult" id="color-black">
                             <div>
-                                <img src="images/ministries/adultlogo.jpg" width="100px" height="100px"/>
+                                <p><img class="img-responsive img-circle" src="images/ministries/adult.jpg" alt="" ></p>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">ADULT</h3>
-                                <h6>Adults</h6>
+                                <h3 class="iconLogo">ADULT</h3>
+                                <h4 class="iconLogo">Adults</h4>
                                 
                             </div>
                         </a>
@@ -147,18 +146,20 @@
         </div>
     </section><!--ministry-->
 
-<section id="blog" class="container">
-            <div class="row center">
+
+
+<section class="container" style="border:1px solid black">
+        <div class="row center">
       
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 center">
+            <div class="col-sm-10 center">
                 <div class="blog">
                     <a name="roots"></a>
                     <div class="blog-item">
                         <div class="blog-content">
                             <div class="row center">
                                 <div class="col">
-                                    <a href="blog-item.html" id="color-black"><h3>ROOTS</h3></a>
+                                    <a href="blog-item.html" id="color-black"><h3>Children's Ministry</h3>
+                                        <h3>Roots</h3></a>
                                 </div>
                             </div>
                             <h5 class="ministries-quote">"There shall come forth a shoot from the stump of Jesse, <br>and a branch from his roots shall bear fruit."<br> Isaiah 11:1</h5>
@@ -213,9 +214,13 @@
                     </div><!--/.blog-item-->
                 </div>
             </div><!--/.col-md-8-->
-        <div class="col-sm-2"></div>
     </div><!--/.row-->
 </section><!--/#blog-->
+
+
+
+
+
 
 <!-- start footer -->
 <section id="black-background">
@@ -226,7 +231,6 @@
                     <a href="aboutus.html"><h5 style="color:white">ABOUT US</h5></a>
                          <ul class="unstyled">
                             <li><a href="/aboutus.html"><span id="gray">Our Doctrine</span></a></li>
-                            <li><a href="/aboutus.html"><span id="gray">We Believe</span></a></li>
                             <li><a href="/aboutus.html"><span id="gray">Meet Our Leaders</span></a></li>
                         </ul>
                 </div><!--/.col-md-3-->
@@ -257,7 +261,6 @@
                         <ul class="unstyled">
                             <li><a href="contact.html"><span id="gray">Contact Directory</span></a></li>
                             <li><a href="contact.html"><span id="gray">Maps &amp; Directions</span></a></li>
-                            <li><a href="contact.html"><span id="gray">Social Media</span></a></li>
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -285,6 +288,8 @@
 
 
 <!-- end footer  -->
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>

@@ -3,33 +3,30 @@
   *zoom: 1;
 }
 
-#OpenSansCondensed {
-  font-family: 'Open Sans Condensed', sans-serif;
+@font-face {
+  font-family: TheSans;
+  src: url(../fonts/TheSans_ExtraBold_caps.ttf);
 }
 
-.container-cross {
-    overflow:hidden;
-
+@font-face {
+  font-family: Lato;
+  src: url(http://fonts.googleapis.com/css?family=Lato:400,700);
 }
 
-#exclusion{
-  position: absolute;
-
-  shape-inside: circle;
-  shape-outside: auto;  
-  shape-image-threshold: <alphavalue>;
-  background:red;
-  border-radius:20%;
-  wrap-flow: both;
+.Lato{
+  font-family: 'Lato';
 }
 
-.circle{
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+.TheSans{
+  font-family: 'TheSans';
+}
+
+.OpenSansCondensed {
+  font-family: 'OpenSansCondensed', sans-serif;
+}
+
+.OpenSans {
+  font-family: 'OpenSans', sans-serif;
 }
 
 .clearfix:before,
@@ -108,7 +105,7 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 50px 0;
+  padding: 30px 0px;
 }
 .turquoise,
 .green-sea,
@@ -282,7 +279,7 @@ body > section {
 }
 .emerald {
   background-color: #8BBDC6;
-  padding: 10px;
+  padding: 0px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -487,8 +484,36 @@ background-color: 797979;
   background-color: #666666;
 }
 
+
+#index-menu {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: relative;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('blackgradient.png');
+}
+
+.index-button:hover{
+  background-color:#999999;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+
+
 .container-leaders {
   width:70%;
+}
+
+.container-doctrine {
+  width:90%;
 }
 
 .container-directory {
@@ -496,8 +521,17 @@ background-color: 797979;
 }
 
 .container-ministry{
-  width:60%;
+  width:70%;
   color:black;
+}
+
+.ministry-panel{
+  width:100%;
+}
+
+#ministry-menu:hover{
+  opacity:0.5;
+  -webkit-transition:opacity 300ms;
 }
 
 #color-black{
@@ -510,21 +544,6 @@ background-color: 797979;
   padding-left:70px;
 }
 
-.service-info{
-  background-color:#8BBDC6;
-}
-
-.service-info2{
-  background-color:#8BBDC6;
-}
-
-.service-info3{
-  background-color:#8BBDC6;
-}
-
-.service-info4{
-  background-color:#8BBDC6;
-}
 
 
 #gray{
@@ -1002,9 +1021,37 @@ ul.tag-cloud li {
   margin-top: 0;
   margin-bottom: 15px;
 }
-#bottom .media-heading {
-  display: block;
-  font-weight: 400;
+
+.index-button{
+  height:25%;
+  width:50%;
+  background: rgba(105, 105, 105, 0.6);
+  border:3px solid #D2D2D2;
+  border-radius:20px;
+  z-index:1;
+  position:absolute;
+  display:block;
+  left:25%;
+  margin-top:-180px;
+}
+
+.index-heading{
+  color: white;
+  display:block;
+<<<<<<< HEAD
+  font-size:36pt;
+  font-weight:900;
+  font-family: Lato;
+  height:60px;
+  left:38%;
+  margin-top:-190px;
+=======
+  font-size:28pt;
+  font-family: Lato;
+>>>>>>> 363e7880e393c5982d2d55520da0db746cf1efb0
+  position:absolute;
+  z-index:99999;
+  text-shadow: 1px 1px black;
 }
 .row > div {
   margin-bottom: 10px;
@@ -1221,10 +1268,6 @@ ul.faq li > div h3 {
   margin-left: -300px; /*half the width*/
 }
 
-.serve_index{
-}
-
-
 .navLogo{
     font-family: lanenar;
     font-weight: bold;
@@ -1232,10 +1275,38 @@ ul.faq li > div h3 {
 }
 
 .bannerLogo{
-    font-family: ;
+    font-family: lanenar;
     font-weight: bold;
-    color: #;
+    color: #FFFFFF;
 }
+
+.sliderLogo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+
+.slider2Logo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+.slider3Logo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.iconLogo{
+    font-family: lanenar;
+    font-weight: bold;
+    color: #000000;
+}
+
 
 
 
