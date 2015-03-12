@@ -3,33 +3,26 @@
   *zoom: 1;
 }
 
-#OpenSansCondensed {
-  font-family: 'Open Sans Condensed', sans-serif;
+@font-face {
+  font-family: TheSans;
+  src: url(../fonts/TheSans_ExtraBold_caps.ttf);
 }
 
-.container-cross {
-    overflow:hidden;
-
+@font-face {
+  font-family: Lato;
+  src: url(http://fonts.googleapis.com/css?family=Lato:400,700);
 }
 
-#exclusion{
-  position: absolute;
-
-  shape-inside: circle;
-  shape-outside: auto;  
-  shape-image-threshold: <alphavalue>;
-  background:red;
-  border-radius:20%;
-  wrap-flow: both;
+.TheSans{
+  font-family: 'TheSans';
 }
 
-.circle{
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+.OpenSansCondensed {
+  font-family: 'OpenSansCondensed', sans-serif;
+}
+
+.OpenSans {
+  font-family: 'OpenSans', sans-serif;
 }
 
 .clearfix:before,
@@ -108,7 +101,7 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 50px 20px;
+  padding: 30px 0px;
 }
 .turquoise,
 .green-sea,
@@ -282,7 +275,7 @@ body > section {
 }
 .emerald {
   background-color: #8BBDC6;
-  padding: 10px;
+  padding: 0px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -487,6 +480,27 @@ background-color: 797979;
   background-color: #666666;
 }
 
+
+#index-menu {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: relative;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('blackgradient.png');
+}
+
+#index-menu:hover{
+  opacity:0.3;
+    -webkit-transition: opacity 300ms;
+}
+
+
+
 .container-leaders {
   width:70%;
 }
@@ -498,6 +512,10 @@ background-color: 797979;
 .container-ministry{
   width:70%;
   color:black;
+}
+
+.ministry-panel{
+  width:100%;
 }
 
 #ministry-menu:hover{
@@ -1007,9 +1025,22 @@ ul.tag-cloud li {
   margin-top: 0;
   margin-bottom: 15px;
 }
-#bottom .media-heading {
-  display: block;
-  font-weight: 400;
+
+.index-heading{
+  color: #EBEBEB;
+  display:block;
+  font-size:36pt;
+  font-weight:900;
+  font-family: Lato;
+  height:60px;
+  left:38%;
+  margin-top:-190px;
+  position:absolute;
+  text-align:left;
+  top:90%;
+  width:50%;
+  z-index:99999;
+  text-shadow: 2px 2px black;
 }
 .row > div {
   margin-bottom: 10px;
@@ -1225,10 +1256,6 @@ ul.faq li > div h3 {
   top: 60%;
   margin-left: -300px; /*half the width*/
 }
-
-.serve_index{
-}
-
 
 .navLogo{
     font-family: lanenar;
