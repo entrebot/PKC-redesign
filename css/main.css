@@ -13,6 +13,10 @@
   src: url(http://fonts.googleapis.com/css?family=Lato:400,700);
 }
 
+.Lato{
+  font-family: 'Lato';
+}
+
 .TheSans{
   font-family: 'TheSans';
 }
@@ -494,15 +498,22 @@ background-color: 797979;
   background-image: url('blackgradient.png');
 }
 
-#index-menu:hover{
-  opacity:0.3;
-    -webkit-transition: opacity 300ms;
+.index-button:hover{
+  background-color:#999999;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
 }
 
 
 
 .container-leaders {
   width:70%;
+}
+
+.container-doctrine {
+  width:90%;
 }
 
 .container-directory {
@@ -533,21 +544,6 @@ background-color: 797979;
   padding-left:70px;
 }
 
-.service-info{
-  background-color:#8BBDC6;
-}
-
-.service-info2{
-  background-color:#8BBDC6;
-}
-
-.service-info3{
-  background-color:#8BBDC6;
-}
-
-.service-info4{
-  background-color:#8BBDC6;
-}
 
 
 #gray{
@@ -1026,21 +1022,36 @@ ul.tag-cloud li {
   margin-bottom: 15px;
 }
 
-.index-heading{
-  color: #EBEBEB;
+.index-button{
+  height:25%;
+  width:50%;
+  background: rgba(105, 105, 105, 0.6);
+  border:3px solid #D2D2D2;
+  border-radius:20px;
+  z-index:1;
+  position:absolute;
   display:block;
+  left:25%;
+  margin-top:-180px;
+}
+
+.index-heading{
+  color: white;
+  display:block;
+<<<<<<< HEAD
   font-size:36pt;
   font-weight:900;
   font-family: Lato;
   height:60px;
   left:38%;
   margin-top:-190px;
+=======
+  font-size:28pt;
+  font-family: Lato;
+>>>>>>> 363e7880e393c5982d2d55520da0db746cf1efb0
   position:absolute;
-  text-align:left;
-  top:90%;
-  width:50%;
   z-index:99999;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 .row > div {
   margin-bottom: 10px;
