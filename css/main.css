@@ -490,29 +490,6 @@ background-color: 797979;
 }
 
 
-#index-menu {
-  width: 100%;
-  height: 100%;
-  content: '';
-  position: relative;
-  z-index:9999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('blackgradient.png');
-}
-
-.index-button:hover{
-  background-color:#999999;
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
-  -o-transition: opacity 300ms;
-  transition: opacity 300ms;
-}
-
-
-
 .container-leaders {
   width:70%;
 }
@@ -539,6 +516,10 @@ background-color: 797979;
 #ministry-menu:hover{
   opacity:0.5;
   -webkit-transition:opacity 300ms;
+}
+
+.giving-panel{
+
 }
 
 #color-black{
@@ -571,7 +552,7 @@ background-color: 797979;
 .portfolio-items,
 .portfolio-filter {
   list-style: none;
-  padding-left:10%;
+  padding:;
   margin: 0 -20px 20px 0;
 }
 .portfolio-filter > li {
@@ -585,7 +566,9 @@ background-color: 797979;
   box-sizing: border-box;
 }
 .portfolio-items.col-2 > li {
-  width: 40%;
+  width: 46%;
+  padding-bottom:30px;
+  padding:2%;
 }
 .portfolio-items.col-3 > li {
   width: 33%;
@@ -606,8 +589,8 @@ background-color: 797979;
 .portfolio-item .item-inner {
   background: #fff;
   border: 1px solid #eee;
-  padding: 10px 10px 0;
-  margin: 0 20px 20px 0;
+  padding: 0px 0;
+  margin: 0 0px 0px 0;
   position: relative;
 }
 .portfolio-item img {
@@ -616,7 +599,7 @@ background-color: 797979;
 .portfolio-item h5 {
   background: #fff;
   margin: 0;
-  padding: 10px 0;
+  padding: 0px 0;
   font-weight: 700;
   font-size: 14px;
   color: #2c3e50;
@@ -1031,7 +1014,7 @@ ul.tag-cloud li {
 
 .index-button{
   height:25%;
-  width:50%;
+  width:60%;
   background: rgba(105, 105, 105, 0.6);
   border:3px solid #D2D2D2;
   border-radius:20px;
@@ -1039,19 +1022,40 @@ ul.tag-cloud li {
   position:absolute;
   display:block;
   left:25%;
-  margin-top:-180px;
+  margin-top:-130px;
 } 
-
 .index-heading{
   color: white;
-  display:block;
-  position:absolute;
+  position:relative;
   z-index:99999;
-  height:60px;
-  font-size:26pt;
+  height:100%;
+  font-size:4.5vmin;
   font-family: Lato;
   text-shadow: 1px 1px black;
 }
+
+#index-menu {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: relative;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('blackgradient.png');
+}
+
+.index-button:hover{
+  background-color:#999999;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+
 .row > div {
   margin-bottom: 10px;
 }
